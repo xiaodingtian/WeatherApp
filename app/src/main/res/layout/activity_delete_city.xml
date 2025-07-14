@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".citymanager.DeleteCityActivity">
+
+    <RelativeLayout
+        android:id="@+id/city_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+        android:background="#FF9800">
+        <Button
+            android:id="@+id/city_delete_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentLeft="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/back5" />
+
+        <Button
+            android:id="@+id/city_delete_save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd= "true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/save"/>
+
+        <TextView
+            android:id="@+id/city_delete_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="删除城市"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <ListView
+        android:id="@+id/delete_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null">
+
+    </ListView>
+</LinearLayout>
